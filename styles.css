@@ -25,6 +25,27 @@ body, input, button{
     margin: 0px 5px;
 }
 
+.linkContainer{
+    display: inline-block;
+    flex-grow: 1;
+}
+.linkContainer2{
+    height:48px;
+    width: auto;
+}
+
+.smallLinkContainer{
+    float: right;
+    padding-left: 32px;
+    box-sizing: border-box;
+    height:48px;
+    line-height: normal;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+
+}
+
 .googleImage {
     display: flex;
     flex-direction: column;
@@ -46,4 +67,46 @@ body, input, button{
     object-fit: contain;
     object-position: center bottom;
     width:auto;
+}
+
+.searchContainer{
+    padding:20px;
+    max-height: 160px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.searchContainerAlign{
+    width: auto;
+    max-width: 500px;
+    position: relative;
+    margin:0 auto;
+    padding-top: 6px;
+    
+}
+
+.searchBarContainer{
+    width: auto;
+    max-width: 500px;
+    display:flex;
+    border: 1px solid black;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+}
+.searchBarContainer2{
+    flex:1;
+    display:flex;
+    padding: 5px 8px 0 16px;
+}
+.SearchImage {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.searchBar {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
 }
