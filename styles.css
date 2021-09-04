@@ -28,6 +28,7 @@ body, input, button{
     margin: 0px 5px;
 }
 
+
 .linkContainer{
     display: inline-block;
     flex-grow: 1;
@@ -35,6 +36,7 @@ body, input, button{
 .linkContainer2{
     height:48px;
     width: auto;
+    justify-content:center;
 }
 
 .smallLinkContainer{
@@ -65,13 +67,13 @@ body, input, button{
 }
 .signin{
     float:right;
-    width:120px;
+    width:96px;
     background-color: #1a73e8;
     color: #e0e0e0;
-    height:100%;
-    border-radius: 10px;
-    font-size: 160%;
-    margin-left: 25px;;
+    height:36px;
+    border-radius: 6px;
+    font-size: 100%;
+    margin: auto 15px;;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -81,7 +83,7 @@ body, input, button{
 }
 @media only screen and (max-width: 800px) {
     .signin{
-        width:100px;
+        width:80px;
     }
   }
 
@@ -98,7 +100,7 @@ a{
     flex-direction: column;
     align-items: center;
     min-height: 92px;
-    max-height: 390px;
+    max-height: 290px;
     height: calc(100% - 560px);
     flex-shrink: 0;
     box-sizing: border-box;
@@ -127,7 +129,7 @@ a{
 }
 .searchContainerAlign{
     width: auto;
-    max-width: 500px;
+    max-width: 584px;
     position: relative;
     margin:0 auto;
     padding-top: 6px;
@@ -136,9 +138,9 @@ a{
 
 .searchBarContainer{
     width: auto;
-    max-width: 500px;
+    max-width: 584px;
     display:flex;
-    border: 1px solid rgb(117, 117, 117);
+    border: 1px solid rgb(184, 184, 184);
     box-shadow: none;
     border-radius: 24px;
     height: 44px;
@@ -146,7 +148,7 @@ a{
     z-index: 20;
 }
 .searchBarContainer:hover{
-    box-shadow: 0px 0px 8px 0px grey;
+    box-shadow: 0px 0px 6px 0px rgb(165, 165, 165);
 }
 .searchBarContainer2{
     flex:1;
@@ -178,7 +180,29 @@ a{
     word-wrap: break-word;
     outline: none;
 }
+.searchButtons{
+    height: 70px;
+    display: flex;
+    margin-top:25px;
+    justify-content:center;
 
+}
+.googleButton{
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color:#f8f9fa;
+    color: rgb(41, 41, 41)
+}
+.googleButton:hover{
+    box-shadow: 0px 0px 6px 0px rgb(165, 165, 165);   
+}
 .spacer{
     flex-grow: 1;
     flex-shrink: 0;
@@ -192,8 +216,37 @@ footer {
 }
 
 .footContainer{
-    padding: 0 20px;
+    padding: 0px 20px;
     justify-content:space-evenly;
     display:flex;
     flex-wrap: wrap;
+}
+
+.botLeftLink{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order:1;
+}
+
+.carbon{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 30%;
+    order:2;    
+}
+.botRightLink{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 30%;
+    order:3;
+}
+.marginBotLink{
+    margin: 10px 15px;
+}
+.marginBotLink:hover{
+    text-decoration:underline;
 }
